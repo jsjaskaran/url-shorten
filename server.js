@@ -15,7 +15,6 @@ var bodyParser   = require('body-parser');
 var configDB = require('./config/database.js');
 
 // configuration ===============================================================
-// mongoose.Promise = global.Promise;
 mongoose.connect(configDB.url); // connect to our database
 
 // Add headers, for now all 

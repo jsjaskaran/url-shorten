@@ -1,8 +1,49 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Url Shortener</title>
-	</head>
-	<body>
-		
-	</body>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Shorten Urls'</title>
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <style type="text/css">
+    	.error{
+    		color:red;
+    	}
+    	.output{
+    		color: green;
+    	}
+    </style>
+  </head>
+  
+  <body>
+    
+    <div class="container-fluid">
+	    <div class="row">
+	        <div class="col-md-6 col-md-offset-3">
+	            <img src="http://placehold.it/250x300" class="logo img-responsive center-block" />
+	            <form role="form" id="input-form">
+	                <div class="form-group center-block">
+	                    <div class="input-group">
+	                        <input type="text" class="form-control" placeholder="Enter your url" name="url-input" /> <span class="input-group-btn">
+							 <button class="btn btn-primary" id="submit" type="submit">Submit</button>
+	                        </span>
+	                    </div>
+	                </div>
+	            </form>
+
+	            <div class="result">
+	            	<div class="loading"></div>
+	            	<div class="error"></div>
+	            	<div class="output"></div>
+	            </div>
+
+	        </div>
+	    </div>
+	</div>
+	<script type="text/javascript" src="/js/app.js"></script>
+  </body>
 </html>

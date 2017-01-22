@@ -4,7 +4,7 @@ module.exports = function(app, restcalls){
 
 	// show website index page
 	app.get('/', function(req, res){
-		res.send('index page not implemented yet');
+		res.render('index');
 	});
 
 	// post url
